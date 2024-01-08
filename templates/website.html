@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Machine Learning App</title>
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;">
+            Age: <input type="number" name="age", step="any" placeholder="Enter Age" required/>
+            <br><br>
+            Gender: <input type="number" name="gender", step="any" placeholder="1 (male) or 0 (female)" required/>
+            <br><br>            
+            Height: <input type="number" name="height", step="any" placeholder="Enter height in cm" required/>
+            <br><br>
+            Weight: <input type="number" name="weight", step="any" placeholder="Enter weight in kg" required/>
+            <br><br>
+            BMI: <input type="number" name="bmi", step="any" placeholder="Enter BMI" required/>
+            <br><br>
+            <button value="Submit">Run</button>
+        </form>
+        <p style="text-align: center;">Prediction Logistic Regresion : {{ output[0] }}</p>
+        <p style="text-align: center;">Prediction k-NN : {{ output[1] }}</p>
+    </body>
+</html>
